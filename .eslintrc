@@ -1,0 +1,77 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true,
+    "amd": true,
+    "browser": true,
+    "node": true
+  },
+  "ignore": [
+    "node_modules"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": [
+      2,
+      "always"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "strict": [
+      2,
+      "never"
+    ],
+    "no-var": 2,
+    "no-const-assign": 2,
+    "no-console": 1,
+    "prefer-spread": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "babel/generator-star-spacing": 1,
+    "babel/new-cap": 1,
+    "babel/object-shorthand": 1,
+    "babel/arrow-parens": 1,
+    "react/no-multi-comp": [
+      2,
+      {
+        "ignoreStateless": true
+      }
+    ],
+    "react/prefer-stateless-function": 2,
+    "react/jsx-key": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-curly-spacing": [
+      2,
+      "never"
+    ],
+    "react/jsx-indent-props": [
+      2,
+      2
+    ],
+    "react/jsx-no-duplicate-props": 2
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "react"
+  ],
+  "settings": {
+    "import/ignore": [
+      "node_modules"
+    ]
+  }
+}

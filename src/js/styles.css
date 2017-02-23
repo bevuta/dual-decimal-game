@@ -1,0 +1,96 @@
+.game {
+    background: #333;
+    transition: background 0.25s linear;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.game label {
+    color: #bbb;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.game input {
+    font-family: Helvetica Neue;
+    font-size: 25px;
+}
+
+.game > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.game input[type|="text"] {
+    background: #000;
+    color: green;
+    width: 90%;
+    align-self: center;
+    border: 0px;
+}
+.game input[type|="text"]:focus {
+    outline: none;
+}
+
+.bit {
+    cursor: pointer;
+}
+.bit > * {
+    margin-left: 1%;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.bit:hover {
+    background: rgba(0,0,0,0.25);
+}
+
+.bit > input[type|="radio"] {
+    align-self: center;
+    width: initial;
+    margin-bottom: 12px;
+}
+
+.target > *, .result > *, .bit > *, .controls >* {
+    text-align: center;
+}
+
+.target {
+    margin-right: 20px;
+}
+
+.result {
+    margin-left: 20px;
+}
+
+.controls {
+    justify-content: center;
+}
+
+.controls > input[type|="button"] {
+    align-self: center;
+    width: 50px;
+    margin: 5px;
+    flex-basis: 1;
+    border: 0px;
+    background: #d0d0d0;
+    color: green;
+    border-radius: 5px;
+    outline: none;
+}
+
+.controls > input[type|="button"]:active {
+    background: #888;
+    color: white;
+}
+
+.won {
+    background: green;
+}
